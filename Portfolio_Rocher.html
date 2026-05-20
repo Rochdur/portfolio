@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <title>Portfolio</title>
+
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="theme-red">
+  
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+  
+  <div class="config">
+    <div class="template-config">
+      <div class="d-block">
+        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+      </div>
+    </div>
+    <div class="set-menu">
+      <p>Select Color</p>
+      <div class="color-bar" data-toggle="selected">
+        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+        <span class="color-item bg-theme-green" data-class="theme-green"></span>
+        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+      <div class="container">
+        <a href="" class="navbar-brand">PORTFOLIO</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link" id="nav-home" data-animate="scrolling">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#competences-pn" class="nav-link" id="nav-skills" data-animate="scrolling">Compétences PN</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tableau-sae" class="nav-link" id="nav-sae" data-animate="scrolling">Tableau SAE</a>
+            </li>
+            <li class="nav-item">
+              <a href="#apport" class="nav-link" id="nav-apport" data-animate="scrolling">Mon Apport</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link" id="nav-portfolio" data-animate="scrolling">Réalisation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" id="nav-contact" data-animate="scrolling">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+              <button class="btn btn-fab btn-theme no-shadow" id="lang-switcher" data-lang="fr">En</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    <div class="caption-header text-center wow zoomInDown">
+      <h1 class="fw-light mb-4" id="hero-title">Je suis <b class="fg-theme">Rocher</b>Goueth Manianga</h1>
+      <div class="badge" id="hero-badge">Chargé d’études statistiques/Data Analyst</div>
+    </div> 
+    <div class="floating-button"><span class="ti-mouse"></span></div>
+  </div>
+  
+  <div class="vg-page page-about" id="about">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/rocher.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h1>Rocher GOUETH MANIANGA</h1>
+          <h5 class="fg-theme mb-3" id="student-title">Étudiant en fin d’études en BUT Sciences des Données</h5>
+          
+          <p class="text-muted" id="about-text">Étudiant motivé, je maîtrise les outils statistiques et informatiques appliqués à la décision.</p>
+          <ul class="theme-list">
+            <li><b id="lbl-city-study">Ville d'Etude:</b> Vannes, France</li>
+            <li><b id="lbl-city">Ville:</b> Rennes, France</li>
+            <li><b id="lbl-age">Age:</b> 24</li>
+            <li><b id="lbl-gender">Masculin:</b> <span id="val-gender">Masculin</span></li>
+          </ul>
+          <a class="btn btn-theme-outline" href="assets/files/CV Rocher GOUETH.pdf" download>
+            <span class="ti-download"></span> <span id="cv-text">Télécharger mon CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5" id="competences-pn">
+      <h1 class="text-center fw-normal wow fadeIn" id="skills-title">Mes compétences acquises en lien avec le Programme National, les SAÉ et le Stage</h1>
+      
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp" id="skills-h4-1">Analyse de données, reporting et datavisualisation</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">EXCEL</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">VBA</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">POWER BI</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp" id="skills-h4-2">Développement d'un composant d'une solution décisionnelle</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">EXCEL</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">POWER BI</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">ETL Talend</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp" id="skills-h4-3">Description et prévision de données temporelles</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">EXCEL</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">R: Notebook</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp" id="skills-h4-4">STAGE : Étude statistique et démographique sur les professionnels de santé</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">QGIS</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">EXCEL</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">SQL</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Python</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5" id="tableau-sae">
+      <h2 class="text-center mb-4 wow fadeInUp" id="table-title">Tableau des Compétences Mobilisées par SAE</h2>
+      <div class="table-responsive wow fadeInUp">
+        <table class="table table-bordered table-hover table-striped bg-white" id="sae-table">
+          <thead style="background-color: #F23827; color: white;">
+            <tr>
+              <th id="th-comp">Compétence</th>
+              <th id="th-app">Application concrète dans la SAE</th>
+              <th>SAE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Traiter des données à des fins décisionnelles</td>
+              <td>Automatisation dans Excel/VBA pour les opérations logistiques</td>
+              <td>SAE2-06</td>
+            </tr>
+            <tr>
+              <td>Analyser statistiquement les données</td>
+              <td>Calculs d’indicateurs, agrégation, vérification de cohérence</td>
+              <td>SAE2-06</td>
+            </tr>
+            <tr>
+              <td>Valoriser une production</td>
+              <td>Construction d’un tableau de bord Power BI pour les équipes métiers</td>
+              <td>SAE2-06</td>
+            </tr>
+            <tr>
+              <td>Respecter la confidentialité</td>
+              <td>Travail sur des données internes et respect des périmètres d’usage</td>
+              <td>SAE2-06</td>
+            </tr>
+            <tr>
+              <td>Travailler dans un cadre interdisciplinaire</td>
+              <td>Allier statistique, programmation, visualisation et gestion de projet</td>
+              <td>SAE2-06</td>
+            </tr>
+            <tr>
+              <td>Développer un outil décisionnel</td>
+              <td>Utilisation de Talend pour intégrer les données dans la chaîne décisionnelle</td>
+              <td>SAE4-01</td>
+            </tr>
+            <tr>
+              <td>Traiter des données à des fins décisionnelles</td>
+              <td>Création de tables de faits et de dimensions, nettoyage de données météo</td>
+              <td>SAE4-01</td>
+            </tr>
+            <tr>
+              <td>Valoriser une production</td>
+              <td>Restitution via Power BI avec indicateurs météos croisés avec l'activité de Sodebo</td>
+              <td>SAE4-01</td>
+            </tr>
+            <tr>
+              <td>Interopérabilité des composants</td>
+              <td>Connexion fluide entre API → Talend → Base → Power BI</td>
+              <td>SAE4-01</td>
+            </tr>
+            <tr>
+              <td>Documentation et test</td>
+              <td>Validation du flux ETL, gestion des erreurs API, journalisation</td>
+              <td>SAE4-01</td>
+            </tr>
+            <tr>
+              <td>Analyser statistiquement les données</td>
+              <td>Décomposition, modélisation et lissage sur données temporelles</td>
+              <td>SAE303</td>
+            </tr>
+            <tr>
+              <td>Valoriser une production</td>
+              <td>Notebook R commenté avec graphiques et interprétations</td>
+              <td>SAE303</td>
+            </tr>
+            <tr>
+              <td>Comprendre les données temporelles</td>
+              <td>Analyse de saisonnalité, tendance, résidus et modèles adaptés</td>
+              <td>SAE303</td>
+            </tr>
+            <tr>
+              <td>Choisir des indicateurs pertinents</td>
+              <td>Choix d’indicateurs épidémiologiques pour justifier les prévisions</td>
+              <td>SAE303</td>
+            </tr>
+            <tr>
+              <td>Communiquer avec rigueur</td>
+              <td>Commentaires structurés et validation critique du modèle appliqué</td>
+              <td>SAE303</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="vg-page page-service" id="apport">
+      <div class="container">
+        <div class="text-center wow fadeInUp">
+          <div class="badge badge-subhead" id="apport-badge">Ce que je peux apporter au sein de votre entreprise</div>
+        </div>
+        <h1 class="fw-normal text-center wow fadeInUp" id="apport-title">Que puis-je faire ?</h1>
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card card-service wow fadeInUp">
+              <div class="icon">
+                <i class="fas fa-chart-line fa-2x"></i>
+              </div>
+              <div class="caption">
+                <h4 class="fg-theme" id="apport-h4-1">Analyse des Données</h4>
+                <p id="apport-p-1">Extraction et interprétation de données pour produire des informations utiles à la décision.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card card-service wow fadeInUp">
+              <div class="icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="caption">
+                <h4 class="fg-theme" id="apport-h4-2">Traitement des Données</h4>
+                <p id="apport-p-2">Nettoyage, transformation et structuration de données issues de différentes sources.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card card-service wow fadeInUp">
+              <div class="icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <div class="caption">
+                <h4 class="fg-theme" id="apport-h4-3">Cartographie</h4>
+                <p id="apport-p-3">Visualisation et analyse de données géographiques pour mettre en évidence des dynamiques territoriales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="card card-service wow fadeInUp">
+              <div class="icon">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <div class="caption">
+                <h4 class="fg-theme" id="apport-h4-4">Conception d'outils Decisionnelle</h4>
+                <p id="apport-p-4">Développement de tableaux de bord et d’outils data pour piloter la performance et aider à la décision.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="vg-page page-portfolio" id="portfolio">
+      <div class="container">
+        <div class="text-center wow fadeInUp">
+          <div class="badge badge-subhead" id="portfolio-badge">Réalisation</div>
+        </div>
+        <h1 class="text-center fw-normal wow fadeInUp" id="portfolio-title">Voir mon Travail</h1>
+        <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+          <button class="btn btn-theme-outline selected" id="filter-all" data-filter="*">Tous</button>
+          <button class="btn btn-theme-outline" data-filter=".apps">SAE2-06</button>
+          <button class="btn btn-theme-outline" data-filter=".template">SAE4-01</button>
+          <button class="btn btn-theme-outline" data-filter=".ios">SAE3-03</button>
+        </div>
+
+        <div class="gridder my-3">
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/Outils de pre.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Outil de pre-traitement</h5> <p>Vba, Power bi</p>">
+              <img src="assets/img/work/Outils de pre.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Outil de pre-traitement</h5>
+                <p>Vba, Power bi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/22.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tableau de bord : Service vélo Marseille et Nantes</h5> <p>Power bi</p>">
+              <img src="assets/img/work/22.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Tableau de bord : Service vélo Marseille et Nantes</h5>
+                <p>Power bi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item template wireframes wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/Excel.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Extrait du fichier</h5> <p>Excel</p>">
+              <img src="assets/img/work/Excel.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Extrait du fichier</h5>
+                <p>Excel</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item template wireframes wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/p bi.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tableau de bord: analyse de l'impact des promotions</h5> <p>Musics</p>">
+              <img src="assets/img/work/p bi.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Tableau de bord: analyse de l'impact des promotions</h5>
+                <p>Power bi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item apps ios wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/Power bi.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Tableau de bord</h5> <p>Power bi</p>">
+              <img src="assets/img/work/Power bi.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Tableau de bord</h5>
+                <p>Power bi</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item apps ios wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/HeatMap.jpg" data-fancybox data-caption="<h5 class='fg-theme'>HeatMap</h5> <p>Vba,Excel</p>">
+              <img src="assets/img/work/HeatMap.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">HeatMap</h5>
+                <p>Vba,Excel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item apps ios wow zoomIn">
+            <div class="img-place" data-src="assets/img/work/note.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Notebook</h5> <p>R</p>">
+              <img src="assets/img/work/note.jpg" alt="">
+              <div class="img-caption">
+                <h5 class="fg-theme">Notebook</h5>
+                <p>R</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="text-center wow fadeInUp">
+          <a href="javascript:void(0)" class="btn btn-theme" id="load-more">Charger plus</a>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="vg-page page-contact" id="contact">
+      <div class="container-fluid">
+        <div class="text-center wow fadeInUp">
+          <div class="badge badge-subhead" id="contact-badge">Contact</div>
+        </div>
+        <h1 class="text-center fw-normal wow fadeInUp" id="contact-title">Contactez-moi</h1>
+        <div class="row py-5">
+          <div class="col-lg-7 px-0 pr-lg-3 wow zoomIn">
+            <div class="vg-maps">
+              <div id="google-maps" style="width: 100%; height: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <form class="vg-contact-form" action="https://formspree.io/f/xpqbvqog" method="POST">
+              <div class="form-row">
+                <div class="col-12 mt-3 wow fadeInUp">
+                  <input class="form-control" type="text" id="form-name" name="Name" placeholder="Nom complet" required>
+                </div>
+                <div class="col-6 mt-3 wow fadeInUp">
+                  <input class="form-control" type="email" id="form-email" name="Email" placeholder="Adresse e-mail" required>
+                </div>
+                <div class="col-6 mt-3 wow fadeInUp">
+                  <input class="form-control" type="text" id="form-subject" name="Subject" placeholder="Objet du message" required>
+                </div>
+                <div class="col-12 mt-3 wow fadeInUp">
+                  <textarea class="form-control" id="form-message" name="Message" rows="6" placeholder="Écrivez votre message ici..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1" id="form-btn">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="vg-footer">
+      <h1 class="text-center" id="footer-title">Portfolio Rocher – Data Analyst</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 py-3">
+            <div class="footer-info">
+              <p id="footer-lbl-find">Où me trouver</p>
+              <hr class="divider">
+              <p class="fs-large fg-white">8 Rue Michel Montaigne, Vannes 56000 France</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 py-3">
+            <div class="float-lg-right">
+              <p id="footer-lbl-follow">Suis-moi</p>
+              <hr class="divider">
+              <ul class="list-unstyled">
+                <li><a href="https://www.linkedin.com/in/rocher-goueth-1422162a4">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 py-3">
+            <div class="float-lg-right">
+              <p id="footer-lbl-contact">Contactez-moi</p>
+              <hr class="divider">
+              <ul class="list-unstyled">
+                <li>rochdur.goueth@gmail.com</li>
+                <li>+33651780373</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+  <script src="assets/vendor/wow/wow.min.js"></script>
+  <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/js/google-maps.js"></script>
+  <script src="assets/js/topbar-virtual.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof WOW === 'function') {
+        new WOW().init();
+      }
+
+      const langBtn = document.getElementById('lang-switcher');
+      
+      const translations = {
+        fr: {
+          navHome: 'Accueil',
+          navSkills: 'Compétences PN',
+          navSae: 'Tableau SAE',
+          navApport: 'Mon Apport',
+          navPortfolio: 'Réalisation',
+          navContact: 'Contact',
+          heroTitle: 'Je suis <b class="fg-theme">Rocher</b>Goueth Manianga',
+          heroBadge: 'Chargé d’études statistiques/Data Analyst',
+          studentTitle: 'Étudiant en fin d’études en BUT Sciences des Données',
+          aboutText: 'Étudiant motivé, je maîtrise les outils statistiques et informatiques appliqués à la décision.',
+          cityStudy: 'Ville d\'Etude: Vannes, France',
+          city: 'Ville: Rennes, France',
+          age: 'Age: 24',
+          gender: 'Masculin: Masculin',
+          cvText: 'Télécharger mon CV',
+          skillsTitle: 'Mes compétences acquises en lien avec le Programme National, les SAÉ et le Stage',
+          skillsH4_1: 'Analyse de données, reporting et datavisualisation',
+          skillsH4_2: 'Développement d\'un composant d\'une solution décisionnelle',
+          skillsH4_3: 'Description et prévision de données temporelles',
+          skillsH4_4: 'STAGE : Étude statistique et démographique sur les professionnels de santé',
+          tableTitle: 'Tableau des Compétences Mobilisées par SAE',
+          thComp: 'Compétence',
+          thApp: 'Application concrète dans la SAE',
+          apportBadge: 'Ce que je peux apporter au sein de votre entreprise',
+          apportTitle: 'Que puis-je faire ?',
+          apportH4_1: 'Analyse des Données',
+          apportP_1: 'Extraction et interprétation de données pour produire des informations utiles à la décision.',
+          apportH4_2: 'Traitement des Données',
+          apportP_2: 'Nettoyage, transformation et structuration de données issues de différentes sources.',
+          apportH4_3: 'Cartographie',
+          apportP_3: 'Visualisation et analyse de données géographiques pour mettre en évidence des dynamiques territoriales.',
+          apportH4_4: 'Conception d\'outils Decisionnelle',
+          apportP_4: 'Développement de tableaux de bord et d’outils data pour piloter la performance et aider à la décision.',
+          portfolioBadge: 'Réalisation',
+          portfolioTitle: 'Voir mon Travail',
+          filterAll: 'Tous',
+          loadMore: 'Charger plus',
+          contactBadge: 'Contact',
+          contactTitle: 'Contactez-moi',
+          formName: 'Nom complet',
+          formEmail: 'Adresse e-mail',
+          formSubject: 'Objet du message',
+          formMessage: 'Écrivez votre message ici...',
+          formBtn: 'Envoyer',
+          footerTitle: 'Portfolio Rocher – Data Analyst',
+          footerFind: 'Où me trouver',
+          footerFollow: 'Suis-moi',
+          footerContact: 'Contactez-moi',
+          tableRows: [
+            ["Traiter des données à des fins décisionnelles", "Automatisation dans Excel/VBA pour les opérations logistiques"],
+            ["Analyse statistiquement les données", "Calculs d’indicateurs, agrégation, vérification de cohérence"],
+            ["Valoriser une production", "Construction d’un tableau de bord Power BI pour les équipes métiers"],
+            ["Respecter la confidentialité", "Travail sur des données internes et respect des périmètres d’usage"],
+            ["Travailler dans un cadre interdisciplinaire", "Allier statistique, programmation, visualisation et gestion de projet"],
+            ["Développer un outil décisionnel", "Utilisation de Talend pour intégrer les données dans la chaîne décisionnelle"],
+            ["Traiter des données à des fins décisionnelles", "Création de tables de faits et de dimensions, nettoyage de données météo"],
+            ["Valoriser une production", "Restitution via Power BI avec indicateurs météos croisés avec l'activité de Sodebo"],
+            ["Interopérabilité des composants", "Connexion fluide entre API → Talend → Base → Power BI"],
+            ["Documentation et test", "Validation du flux ETL, gestion des erreurs API, journalisation"],
+            ["Analyser statistiquement les données", "Décomposition, modélisation et lissage sur données temporelles"],
+            ["Valoriser une production", "Notebook R commenté avec graphiques et interprétations"],
+            ["Comprendre les données temporelles", "Analyse de saisonnalité, tendance, résidus et modèles adaptés"],
+            ["Choisir des indicateurs pertinents", "Choix d’indicateurs épidémiologiques pour justifier les prévisions"],
+            ["Communiquer avec rigueur", "Commentaires structurés et validation critique du modèle appliqué"]
+          ]
+        },
+        en: {
+          navHome: 'Home',
+          navSkills: 'National Skills',
+          navSae: 'SAE Table',
+          navApport: 'My Contribution',
+          navPortfolio: 'Portfolio',
+          navContact: 'Contact',
+          heroTitle: 'I am <b class="fg-theme">Rocher</b>Goueth Manianga',
+          heroBadge: 'Statistical Analyst / Data Analyst',
+          studentTitle: 'Graduate Data Science Student (BUT)',
+          aboutText: 'Motivated student, proficient in statistical and IT tools applied to decision-making processes.',
+          cityStudy: 'City of Study: Vannes, France',
+          city: 'City: Rennes, France',
+          age: 'Age: 24',
+          gender: 'Gender: Male',
+          cvText: 'Download my CV',
+          skillsTitle: 'Skills Acquired in Relation to the National Program, SAEs, and Internship',
+          skillsH4_1: 'Data analysis, reporting, and datavisualization',
+          skillsH4_2: 'Development of a Business Intelligence solution component',
+          skillsH4_3: 'Description and forecasting of time series data',
+          skillsH4_4: 'INTERNSHIP: Statistical and demographic study on healthcare professionals',
+          tableTitle: 'Table of Core Skills Mobilized by SAE',
+          thComp: 'Skill / Competency',
+          thApp: 'Practical Application in the SAE',
+          apportBadge: 'What I can bring to your company',
+          apportTitle: 'What can I do?',
+          apportH4_1: 'Data Analysis',
+          apportP_1: 'Data extraction and interpretation to provide actionable insights for decision-making.',
+          apportH4_2: 'Data Processing',
+          apportP_2: 'Cleaning, transforming, and structuring data from multiple heterogeneous sources.',
+          apportH4_3: 'Mapping & GIS',
+          apportP_3: 'Visualizing and analyzing geographical datasets to highlight spatial and regional dynamics.',
+          apportH4_4: 'BI Solutions Design',
+          apportP_4: 'Developing interactive dashboards and tailor-made data tools to track performance.',
+          portfolioBadge: 'Achievements',
+          portfolioTitle: 'See My Work',
+          filterAll: 'All',
+          loadMore: 'Load more',
+          contactBadge: 'Contact',
+          contactTitle: 'Get in Touch',
+          formName: 'Full Name',
+          formEmail: 'Email Address',
+          formSubject: 'Subject',
+          formMessage: 'Write your message here...',
+          formBtn: 'Send Message',
+          footerTitle: 'Rocher Portfolio – Data Analyst',
+          footerFind: 'Where to find me',
+          footerFollow: 'Follow me',
+          footerContact: 'Contact me',
+          tableRows: [
+            ["Data processing for decision-making", "Excel/VBA automation for logistical operations"],
+            ["Statistical data analysis", "Indicator calculations, data aggregation, consistency checks"],
+            ["Promoting and valuing outputs", "Building a Power BI dashboard for business and operations teams"],
+            ["Respecting data confidentiality", "Working with internal datasets and respecting access boundaries"],
+            ["Interdisciplinary teamwork", "Combining statistics, programming, visualization, and project management"],
+            ["Developing a BI tool", "Using Talend to integrate datasets into the decision-making pipeline"],
+            ["Data processing for decision-making", "Creating facts and dimensions tables, cleaning weather datasets"],
+            ["Promoting and valuing outputs", "Power BI reporting with weather indicators crossed with corporate activity"],
+            ["Component interoperability", "Seamless data flow connection between API → Talend → DB → Power BI"],
+            ["Documentation and testing", "ETL flow validation, API error handling, data logging"],
+            ["Statistical data analysis", "Decomposition, modeling, and smoothing of time-series data"],
+            ["Promoting and valuing outputs", "Commented R Notebook including clear plots and analytical interpretations"],
+            ["Understanding time-series data", "Analysis of seasonality, trends, residuals, and specific forecasting models"],
+            ["Choosing relevant indicators", "Selecting epidemiological metrics to support and justify predictions"],
+            ["Rigorous communication", "Structured comments and critical validation of the selected model"]
+          ]
+        }
+      };
+
+      langBtn.addEventListener('click', function() {
+        const currentLang = this.getAttribute('data-lang');
+        const newLang = currentLang === 'fr' ? 'en' : 'fr';
+        
+        this.setAttribute('data-lang', newLang);
+        this.textContent = newLang === 'fr' ? 'En' : 'Fr';
+        document.documentElement.lang = newLang;
+
+        const data = translations[newLang];
+        
+        // Navigation 
+        document.getElementById('nav-home').textContent = data.navHome;
+        document.getElementById('nav-skills').textContent = data.navSkills;
+        document.getElementById('nav-sae').textContent = data.navSae;
+        document.getElementById('nav-apport').textContent = data.navApport;
+        document.getElementById('nav-portfolio').textContent = data.navPortfolio;
+        document.getElementById('nav-contact').textContent = data.navContact;
+
+        // Présentation / En-tête
+        document.getElementById('hero-title').innerHTML = data.heroTitle;
+        document.getElementById('hero-badge').textContent = data.heroBadge;
+        document.getElementById('student-title').textContent = data.studentTitle;
+        document.getElementById('about-text').textContent = data.aboutText;
+        
+        // Liste d'informations
+        document.getElementById('lbl-city-study').nextSibling.textContent = " " + data.cityStudy.split(': ')[1];
+        document.getElementById('lbl-city').nextSibling.textContent = " " + data.city.split(': ')[1];
+        document.getElementById('lbl-age').nextSibling.textContent = " " + data.age.split(': ')[1];
+        document.getElementById('val-gender').textContent = data.gender.split(': ')[1];
+        document.getElementById('cv-text').textContent = data.cvText;
+
+        // Bloc Compétences
+        document.getElementById('skills-title').textContent = data.skillsTitle;
+        document.getElementById('skills-h4-1').textContent = data.skillsH4_1;
+        document.getElementById('skills-h4-2').textContent = data.skillsH4_2;
+        document.getElementById('skills-h4-3').textContent = data.skillsH4_3;
+        document.getElementById('skills-h4-4').textContent = data.skillsH4_4;
+
+        // Tableau SAE
+        document.getElementById('table-title').textContent = data.tableTitle;
+        document.getElementById('th-comp').textContent = data.thComp;
+        document.getElementById('th-app').textContent = data.thApp;
+        
+        const rows = document.querySelectorAll('#sae-table tbody tr');
+        rows.forEach((row, i) => {
+          if (data.tableRows[i]) {
+            row.cells[0].textContent = data.tableRows[i][0];
+            row.cells[1].textContent = data.tableRows[i][1];
+          }
+        });
+
+        // Apport
+        document.getElementById('apport-badge').textContent = data.apportBadge;
+        document.getElementById('apport-title').textContent = data.apportTitle;
+        document.getElementById('apport-h4-1').textContent = data.apportH4_1;
+        document.getElementById('apport-p-1').textContent = data.apportP_1;
+        document.getElementById('apport-h4-2').textContent = data.apportH4_2;
+        document.getElementById('apport-p-2').textContent = data.apportP_2;
+        document.getElementById('apport-h4-3').textContent = data.apportH4_3;
+        document.getElementById('apport-p-3').textContent = data.apportP_3;
+        document.getElementById('apport-h4-4').textContent = data.apportH4_4;
+        document.getElementById('apport-p-4').textContent = data.apportP_4;
+
+        // Portfolio Galerie
+        document.getElementById('portfolio-badge').textContent = data.portfolioBadge;
+        document.getElementById('portfolio-title').textContent = data.portfolioTitle;
+        document.getElementById('filter-all').textContent = data.filterAll;
+        document.getElementById('load-more').textContent = data.loadMore;
+
+        // Formulaire Contact
+        document.getElementById('contact-badge').textContent = data.contactBadge;
+        document.getElementById('contact-title').textContent = data.contactTitle;
+        document.getElementById('form-name').placeholder = data.formName;
+        document.getElementById('form-email').placeholder = data.formEmail;
+        document.getElementById('form-subject').placeholder = data.formSubject;
+        document.getElementById('form-message').placeholder = data.formMessage;
+        document.getElementById('form-btn').textContent = data.formBtn;
+
+        // Footer
+        document.getElementById('footer-title').textContent = data.footerTitle;
+        document.getElementById('footer-lbl-find').textContent = data.footerFind;
+        document.getElementById('footer-lbl-follow').textContent = data.footerFollow;
+        document.getElementById('footer-lbl-contact').textContent = data.footerContact;
+      });
+    });
+  </script>
+  
+</body>
+</html>
